@@ -1,0 +1,365 @@
+2025-12-08 11:45:25  INFO: Operating system name: Mac OS X version: 15.6.1 architecture: aarch64
+2025-12-08 11:45:25  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Homebrew version: 17.0.15+0
+2025-12-08 11:45:25  INFO: Memory limit heap: 4096mb non-heap: 0mb
+2025-12-08 11:45:25  INFO: Character encoding: UTF-8
+2025-12-08 11:45:25  INFO: Version: null
+2025-12-08 11:45:25  INFO: Starting server...
+2025-12-08 11:45:25  INFO: HikariPool-1 - Starting...
+2025-12-08 11:45:25  INFO: HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c7a078
+2025-12-08 11:45:25  INFO: HikariPool-1 - Start completed.
+2025-12-08 11:45:25  INFO: Creating snapshot
+2025-12-08 11:45:26  INFO: Successfully acquired change log lock
+2025-12-08 11:45:26  INFO: Creating database changelog table with name: traccar.databasechangelog
+2025-12-08 11:45:26  INFO: Clearing database change log checksums for database mysql
+2025-12-08 11:45:26  INFO: Successfully released change log lock
+2025-12-08 11:45:26  INFO: Command execution complete
+2025-12-08 11:45:26  INFO: Reading from traccar.databasechangelog
+2025-12-08 11:45:26  INFO: Successfully acquired change log lock
+2025-12-08 11:45:26  INFO: Using deploymentId: 5165525834
+2025-12-08 11:45:26  INFO: Reading from traccar.databasechangelog
+2025-12-08 11:45:26  INFO: Table tc_attributes created
+2025-12-08 11:45:26  INFO: Table tc_calendars created
+2025-12-08 11:45:26  INFO: Table tc_commands created
+2025-12-08 11:45:26  INFO: Table tc_device_attribute created
+2025-12-08 11:45:26  INFO: Table tc_device_command created
+2025-12-08 11:45:26  INFO: Table tc_device_driver created
+2025-12-08 11:45:26  INFO: Table tc_device_geofence created
+2025-12-08 11:45:26  INFO: Table tc_device_maintenance created
+2025-12-08 11:45:26  INFO: Table tc_device_notification created
+2025-12-08 11:45:26  INFO: Table tc_devices created
+2025-12-08 11:45:26  INFO: Table tc_drivers created
+2025-12-08 11:45:26  INFO: Table tc_events created
+2025-12-08 11:45:26  INFO: Table tc_geofences created
+2025-12-08 11:45:26  INFO: Table tc_group_attribute created
+2025-12-08 11:45:26  INFO: Table tc_group_command created
+2025-12-08 11:45:26  INFO: Table tc_group_driver created
+2025-12-08 11:45:26  INFO: Table tc_group_geofence created
+2025-12-08 11:45:26  INFO: Table tc_group_maintenance created
+2025-12-08 11:45:26  INFO: Table tc_group_notification created
+2025-12-08 11:45:26  INFO: Table tc_groups created
+2025-12-08 11:45:26  INFO: Table tc_maintenances created
+2025-12-08 11:45:26  INFO: Table tc_notifications created
+2025-12-08 11:45:26  INFO: Table tc_positions created
+2025-12-08 11:45:26  INFO: Table tc_servers created
+2025-12-08 11:45:26  INFO: Table tc_statistics created
+2025-12-08 11:45:26  INFO: Table tc_user_attribute created
+2025-12-08 11:45:26  INFO: Table tc_user_calendar created
+2025-12-08 11:45:26  INFO: Table tc_user_command created
+2025-12-08 11:45:26  INFO: Table tc_user_device created
+2025-12-08 11:45:26  INFO: Table tc_user_driver created
+2025-12-08 11:45:26  INFO: Table tc_user_geofence created
+2025-12-08 11:45:26  INFO: Table tc_user_group created
+2025-12-08 11:45:26  INFO: Table tc_user_maintenance created
+2025-12-08 11:45:26  INFO: Table tc_user_notification created
+2025-12-08 11:45:26  INFO: Table tc_user_user created
+2025-12-08 11:45:26  INFO: Table tc_users created
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_command (commandid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_devices (groupid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_events (deviceid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2025-12-08 11:45:26  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_command (commandid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_command (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_positions (deviceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_command (commandid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_command (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_device (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_driver (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_group (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_group (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_notification (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_user (userid)
+2025-12-08 11:45:27  INFO: New row inserted into tc_servers
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 653ms
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_groups (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 24ms
+2025-12-08 11:45:27  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got mysql
+
+2025-12-08 11:45:27  INFO: Creating snapshot
+2025-12-08 11:45:27  INFO: Index user_device_user_id created
+2025-12-08 11:45:27  INFO: Index position_deviceid_fixtime created
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 12ms
+2025-12-08 11:45:27  INFO: Index event_deviceid_servertime created
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 6ms
+2025-12-08 11:45:27  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 8ms
+2025-12-08 11:45:27  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 3ms
+2025-12-08 11:45:27  INFO: Column tc_events.servertime renamed to eventtime
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 7ms
+2025-12-08 11:45:27  INFO: Table tc_orders created
+2025-12-08 11:45:27  INFO: Table tc_user_order created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_order (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_order (orderid)
+2025-12-08 11:45:27  INFO: Table tc_group_order created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_order (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_order (orderid)
+2025-12-08 11:45:27  INFO: Table tc_device_order created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_order (orderid)
+2025-12-08 11:45:27  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 77ms
+2025-12-08 11:45:27  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2025-12-08 11:45:27  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2025-12-08 11:45:27  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2025-12-08 11:45:27  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2025-12-08 11:45:27  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2025-12-08 11:45:27  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 44ms
+2025-12-08 11:45:27  INFO: Index idx_drivers_uniqueid created
+2025-12-08 11:45:27  INFO: Index idx_devices_uniqueid created
+2025-12-08 11:45:27  INFO: Index idx_users_email created
+2025-12-08 11:45:27  INFO: Index idx_users_login created
+2025-12-08 11:45:27  INFO: Index idx_users_token created
+2025-12-08 11:45:27  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 60ms
+2025-12-08 11:45:27  INFO: Columns status(CHAR(8)) added to tc_devices
+2025-12-08 11:45:27  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 26ms
+2025-12-08 11:45:27  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2025-12-08 11:45:27  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2025-12-08 11:45:27  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2025-12-08 11:45:27  INFO: Table tc_keystore created
+2025-12-08 11:45:27  INFO: Index idx_users_token dropped from table tc_users
+2025-12-08 11:45:27  INFO: Column tc_users.token dropped
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 59ms
+2025-12-08 11:45:27  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2025-12-08 11:45:27  INFO: Table tc_commands_queue created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2025-12-08 11:45:27  INFO: Index idx_commands_queue_deviceid created
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 29ms
+2025-12-08 11:45:27  INFO: Column tc_commands_queue.description dropped
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 6ms
+2025-12-08 11:45:27  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2025-12-08 11:45:27  INFO: Table tc_reports created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_reports (calendarid)
+2025-12-08 11:45:27  INFO: Table tc_user_report created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_report (userid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_user_report (reportid)
+2025-12-08 11:45:27  INFO: Table tc_group_report created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_report (groupid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_group_report (reportid)
+2025-12-08 11:45:27  INFO: Table tc_device_report created
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_device_report (reportid)
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 70ms
+2025-12-08 11:45:27  INFO: Columns commandid(INT) added to tc_notifications
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_notifications (commandid)
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 19ms
+2025-12-08 11:45:27  INFO: Column tc_devices.geofenceids dropped
+2025-12-08 11:45:27  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 21ms
+2025-12-08 11:45:27  INFO: Columns calendarid(INT) added to tc_devices
+2025-12-08 11:45:27  INFO: Foreign key constraint added to tc_devices (calendarid)
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 33ms
+2025-12-08 11:45:27  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 13ms
+2025-12-08 11:45:27  INFO: Columns temporary(BOOLEAN) added to tc_users
+2025-12-08 11:45:27  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 14ms
+2025-12-08 11:45:27  INFO: Column tc_servers.twelvehourformat dropped
+2025-12-08 11:45:27  INFO: Column tc_users.twelvehourformat dropped
+2025-12-08 11:45:27  INFO: Columns priority(INT) added to tc_attributes
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 22ms
+2025-12-08 11:45:27  INFO: Creating snapshot
+2025-12-08 11:45:27  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : Foreign Key fk_event_deviceid does not exist
+
+2025-12-08 11:45:27  INFO: Foreign key fk_events_deviceid dropped
+2025-12-08 11:45:27  INFO: Foreign key fk_positions_deviceid dropped
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 12ms
+2025-12-08 11:45:27  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 8ms
+2025-12-08 11:45:27  INFO: Creating snapshot
+2025-12-08 11:45:27  INFO: Table tc_actions created
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 16ms
+2025-12-08 11:45:27  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got mysql
+
+2025-12-08 11:45:27  INFO: Columns motionpositionid(INT) added to tc_devices
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 14ms
+2025-12-08 11:45:27  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got mysql
+
+2025-12-08 11:45:27  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          schema/changelog-master.xml : Not precondition failed
+
+2025-12-08 11:45:27  INFO: Table tc_revoked_tokens created
+2025-12-08 11:45:27  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 3ms
+2025-12-08 11:45:27  INFO: UPDATE SUMMARY
+2025-12-08 11:45:27  INFO: Run:                         31
+2025-12-08 11:45:27  INFO: Previously run:               0
+2025-12-08 11:45:27  INFO: Filtered out:                 0
+2025-12-08 11:45:27  INFO: -------------------------------
+2025-12-08 11:45:27  INFO: Total change sets:           31
+2025-12-08 11:45:27  INFO: Update summary generated
+2025-12-08 11:45:27  INFO: Update command completed successfully.
+2025-12-08 11:45:27  INFO: Successfully released change log lock
+2025-12-08 11:45:27  INFO: Command execution complete
+2025-12-08 11:45:28 ERROR: Main method error - /Users/yl/Desktop/Code/private/traccar/web - NoSuchFileException (... < WebServer:134 < *:98 < MainModule:203 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2025-12-08 11:46:11  INFO: Operating system name: Mac OS X version: 15.6.1 architecture: aarch64
+2025-12-08 11:46:11  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Homebrew version: 17.0.15+0
+2025-12-08 11:46:11  INFO: Memory limit heap: 4096mb non-heap: 0mb
+2025-12-08 11:46:11  INFO: Character encoding: UTF-8
+2025-12-08 11:46:11  INFO: Version: null
+2025-12-08 11:46:11  INFO: Starting server...
+2025-12-08 11:46:12  INFO: HikariPool-1 - Starting...
+2025-12-08 11:46:12  INFO: HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c650a3
+2025-12-08 11:46:12  INFO: HikariPool-1 - Start completed.
+2025-12-08 11:46:12  INFO: Successfully acquired change log lock
+2025-12-08 11:46:12  INFO: Clearing database change log checksums for database mysql
+2025-12-08 11:46:12  INFO: Successfully released change log lock
+2025-12-08 11:46:12  INFO: Command execution complete
+2025-12-08 11:46:12  INFO: Reading from traccar.databasechangelog
+2025-12-08 11:46:13  INFO: Reading from traccar.databasechangelog
+2025-12-08 11:46:13  INFO: Reading from traccar.databasechangelog
+2025-12-08 11:46:13  INFO: UPDATE SUMMARY
+2025-12-08 11:46:13  INFO: Run:                          0
+2025-12-08 11:46:13  INFO: Previously run:              31
+2025-12-08 11:46:13  INFO: Filtered out:                 0
+2025-12-08 11:46:13  INFO: -------------------------------
+2025-12-08 11:46:13  INFO: Total change sets:           31
+2025-12-08 11:46:13  INFO: Update summary generated
+2025-12-08 11:46:13  INFO: Command execution complete
+2025-12-08 11:46:13 ERROR: Main method error - /Users/yl/Desktop/Code/private/traccar/web - NoSuchFileException (... < WebServer:134 < *:98 < MainModule:203 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2025-12-08 12:06:38  INFO: Operating system name: Mac OS X version: 15.6.1 architecture: aarch64
+2025-12-08 12:06:38  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Homebrew version: 17.0.15+0
+2025-12-08 12:06:38  INFO: Memory limit heap: 4096mb non-heap: 0mb
+2025-12-08 12:06:38  INFO: Character encoding: UTF-8
+2025-12-08 12:06:38  INFO: Version: null
+2025-12-08 12:06:38  INFO: Starting server...
+2025-12-08 12:06:38  INFO: HikariPool-1 - Starting...
+2025-12-08 12:06:38  INFO: HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c650a3
+2025-12-08 12:06:38  INFO: HikariPool-1 - Start completed.
+2025-12-08 12:06:39  INFO: Successfully acquired change log lock
+2025-12-08 12:06:39  INFO: Clearing database change log checksums for database mysql
+2025-12-08 12:06:39  INFO: Successfully released change log lock
+2025-12-08 12:06:39  INFO: Command execution complete
+2025-12-08 12:06:39  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:06:39  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:06:39  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:06:39  INFO: UPDATE SUMMARY
+2025-12-08 12:06:39  INFO: Run:                          0
+2025-12-08 12:06:39  INFO: Previously run:              31
+2025-12-08 12:06:39  INFO: Filtered out:                 0
+2025-12-08 12:06:39  INFO: -------------------------------
+2025-12-08 12:06:39  INFO: Total change sets:           31
+2025-12-08 12:06:39  INFO: Update summary generated
+2025-12-08 12:06:39  INFO: Command execution complete
+2025-12-08 12:06:40 ERROR: Main method error - /Users/yl/Desktop/Code/private/traccar/web - NoSuchFileException (... < WebServer:134 < *:98 < MainModule:203 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2025-12-08 12:07:52  INFO: Operating system name: Mac OS X version: 15.6.1 architecture: aarch64
+2025-12-08 12:07:52  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Homebrew version: 17.0.15+0
+2025-12-08 12:07:52  INFO: Memory limit heap: 4096mb non-heap: 0mb
+2025-12-08 12:07:52  INFO: Character encoding: UTF-8
+2025-12-08 12:07:52  INFO: Version: null
+2025-12-08 12:07:52  INFO: Starting server...
+2025-12-08 12:07:52  INFO: HikariPool-1 - Starting...
+2025-12-08 12:07:52  INFO: HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c650a3
+2025-12-08 12:07:52  INFO: HikariPool-1 - Start completed.
+2025-12-08 12:07:52  INFO: Successfully acquired change log lock
+2025-12-08 12:07:53  INFO: Clearing database change log checksums for database mysql
+2025-12-08 12:07:53  INFO: Successfully released change log lock
+2025-12-08 12:07:53  INFO: Command execution complete
+2025-12-08 12:07:53  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:07:53  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:07:53  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:07:53  INFO: UPDATE SUMMARY
+2025-12-08 12:07:53  INFO: Run:                          0
+2025-12-08 12:07:53  INFO: Previously run:              31
+2025-12-08 12:07:53  INFO: Filtered out:                 0
+2025-12-08 12:07:53  INFO: -------------------------------
+2025-12-08 12:07:53  INFO: Total change sets:           31
+2025-12-08 12:07:53  INFO: Update summary generated
+2025-12-08 12:07:53  INFO: Command execution complete
+2025-12-08 12:07:54 ERROR: Main method error - /Users/yl/Desktop/Code/private/traccar/web - NoSuchFileException (... < WebServer:134 < *:98 < MainModule:203 < <gener:-1 < *:-1 < ... < Main:125 < ...)
+2025-12-08 12:11:06  INFO: Operating system name: Mac OS X version: 15.6.1 architecture: aarch64
+2025-12-08 12:11:06  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Homebrew version: 17.0.15+0
+2025-12-08 12:11:06  INFO: Memory limit heap: 4096mb non-heap: 0mb
+2025-12-08 12:11:06  INFO: Character encoding: UTF-8
+2025-12-08 12:11:06  INFO: Version: null
+2025-12-08 12:11:06  INFO: Starting server...
+2025-12-08 12:11:06  INFO: HikariPool-1 - Starting...
+2025-12-08 12:11:06  INFO: HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23c650a3
+2025-12-08 12:11:06  INFO: HikariPool-1 - Start completed.
+2025-12-08 12:11:06  INFO: Successfully acquired change log lock
+2025-12-08 12:11:06  INFO: Clearing database change log checksums for database mysql
+2025-12-08 12:11:06  INFO: Successfully released change log lock
+2025-12-08 12:11:06  INFO: Command execution complete
+2025-12-08 12:11:07  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:11:07  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:11:07  INFO: Reading from traccar.databasechangelog
+2025-12-08 12:11:07  INFO: UPDATE SUMMARY
+2025-12-08 12:11:07  INFO: Run:                          0
+2025-12-08 12:11:07  INFO: Previously run:              31
+2025-12-08 12:11:07  INFO: Filtered out:                 0
+2025-12-08 12:11:07  INFO: -------------------------------
+2025-12-08 12:11:07  INFO: Total change sets:           31
+2025-12-08 12:11:07  INFO: Update summary generated
+2025-12-08 12:11:07  INFO: Command execution complete
+2025-12-08 12:11:08  INFO: jetty-12.1.5; built: 2025-12-03T22:18:24.732Z; git: 4905d09d7b6801e792d7b73946cf7b66e4be25d6; jvm 17.0.15+0
+2025-12-08 12:11:08  INFO: Session workerName=node0
+2025-12-08 12:11:08  INFO: Started oeje10s.ServletContextHandler@3957d88b{ROOT,/,b=file:///Users/yl/Desktop/Code/private/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@1152900{STARTED}}
+2025-12-08 12:11:08  INFO: [Td3ca263d] connected
+2025-12-08 12:11:08  INFO: [Td3ca263d: tek < 0:0:0:0:0:0:0:1] GET / HTTP/1.1\r\nHost: localhost:5173\r\nUpgrade: websocket\r\nPragma: no-cache\r\nSec-WebSocket-Key: f5WMoBobWrwoRXHluvm6vg==\r\nSec-Fetch-Site: same-origin\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate\r\nSec-WebSocket-Protocol: vite-ping\r\nSec-Fetch-Mode: websocket\r\nCache-Control: no-cache\r\nOrigin: http://localhost:5173\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15\r\nConnection: Upgrade\r\nSec-Fetch-Dest: websocket\r\nAccept: */*\r\nAccept-Language: zh-CN,zh-Hans;q=0.9\r\nPriority: u=3, i\r\nAccept-Encoding: gzip, deflate\r\n\r\n
+2025-12-08 12:11:08  WARN: Unknown device - 454502f312e310d (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - 5574d6f426f6257 (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - f636b65742d4578 (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - 76562736f636b65 (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - 020284d6163696e (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - e36205361666172 (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  WARN: Unknown device - 16e67756167653a (0:0:0:0:0:0:0:1)
+2025-12-08 12:11:08  INFO: Started oeje10s.ServletContextHandler@3957d88b{ROOT,/,b=file:///Users/yl/Desktop/Code/private/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@1152900{STARTED}}
+2025-12-08 12:11:08  INFO: Started oejs.ServerConnector@3e0855b0{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2025-12-08 12:11:08  INFO: Started oejs.Server@484b5a21{STARTING}[12.1.5,sto=0] @387ms
+2025-12-08 12:11:15  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:11:21  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:11:35  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:11:41  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:11:55  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:12:01  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:12:15  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:12:21  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:12:35  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:12:41  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:12:55  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:13:01  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:13:15  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:13:21  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:13:35  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:13:41  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:13:55  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:14:01  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
+2025-12-08 12:14:15  INFO: [U5e56490a: gps103 < 192.168.1.1] 01010e00e12b83c7e3a4006700000006000a544c2d57445238363930000b0003312e3000070001010005001134382d30452d45432d32422d31392d31380008000b3139322e3136382e312e310009000a74706c6f67696e2e636e000a000e544c2d5744523836393020312e30000c0005312e372e32
+2025-12-08 12:14:21  INFO: [U5e56490a: gps103 < 192.168.1.100] 01010e00e12b83c73aa600fd0000000e000fe58f8ce79baee69184e5838fe69cba00060014544c2d495043343847572d5a4f4f4d2d4455414c0005001130342d66392d66382d33332d35342d663700070001050008000d3139322e3136382e312e313030000d0029757569643a33666131666536382d623931352d343035332d613365312d303466396638333335346637001100040000000100130004000000500012002e687474703a2f2f3139322e3136382e312e3130303a323032302f6f6e7669662f6465766963655f7365727669636500180017545031374439384145333142424244313446313530383000200014556d486e6a7278342f5a3130666d3569426976450021000100
