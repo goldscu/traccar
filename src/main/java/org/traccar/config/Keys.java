@@ -284,6 +284,14 @@ public final class Keys {
             List.of(KeyType.CONFIG));
 
     /**
+     * Minimum accuracy to include. If the value is lower, it will be set to zero.
+     */
+    public static final ConfigKey<Double> OSMAND_MIN_ACCURACY = new DoubleConfigKey(
+            "osmand.minAccuracy",
+            List.of(KeyType.CONFIG),
+            10.0);
+
+    /**
      * Use alternative format for the protocol of commands.
      */
     public static final ConfigSuffix<Boolean> PROTOCOL_ALTERNATIVE = new BooleanConfigSuffix(
@@ -789,21 +797,6 @@ public final class Keys {
             "web.port",
             List.of(KeyType.CONFIG),
             8082);
-
-    /**
-     * Maximum API requests per second. Above this limit requests and delayed and throttled.
-     */
-    public static final ConfigKey<Integer> WEB_MAX_REQUESTS_PER_SECOND = new IntegerConfigKey(
-            "web.maxRequestsPerSec",
-            List.of(KeyType.CONFIG));
-
-    /**
-     * Maximum API request duration in seconds.
-     */
-    public static final ConfigKey<Integer> WEB_MAX_REQUEST_SECONDS = new IntegerConfigKey(
-            "web.maxRequestSec",
-            List.of(KeyType.CONFIG),
-            600);
 
     /**
      * Path to the web app folder.
